@@ -26,8 +26,11 @@
       <div class="panel_menu">
         <img class="logo" src="./img/logo.svg" alt="Britlex_logo" />
         <div class="panel_line"></div>
-        <a href="#">Home</a> <a href="#">Skills</a> <a href="#">About us</a>
-        <a href="#">Pricing</a> <a href="#">Contacts</a>
+        <a href="#home" class="side-link">Home</a>
+        <a href="#skills" class="side-link">Skills</a>
+        <a href="#about" class="side-link">About us</a>
+        <a href="#pricing" class="side-link">Pricing</a>
+        <a href="#contacts" class="side-link">Contacts</a>
         <button class="black-button button-sm">Let's Talk</button>
       </div>
     </div>
@@ -49,13 +52,17 @@
       <div class="container">
         <img class="logo" src="./img/logo.svg" alt="Britlex_logo" />
         <div class="inline_menu-links">
-          <a href="#">Home</a> <a href="#">Skills</a> <a href="#">About us</a>
-          <a href="#">Pricing</a> <a href="#">Contacts</a>
+          <a href="#home" class="side-link active-link">Home</a>
+          <a href="#skills" class="side-link">Skills</a>
+          <a href="#about" class="side-link">About us</a>
+          <a href="#pricing" class="side-link">Pricing</a>
+          <a href="#contacts" class="side-link">Contacts</a>
         </div>
         <button class="black-button button-sm">Let's Talk</button>
       </div>
     </section>
     <!-- Первый блок HOME -->
+    <div id="home"></div>
     <div class="container">
       <section class="home_section">
         <div class="home_section-text">
@@ -78,7 +85,7 @@
     <!-- Второй блок Skills  -->
     <section class="skills">
       <div class="container">
-        <h2 class="title_sm">Skills</h2>
+        <h2 class="title_sm" id="skills">Skills</h2>
         <div class="skills_grid-container">
           <!-- grid-speaking -->
           <div class="skills_grid-item grid-speaking">
@@ -156,7 +163,7 @@
     </section>
 
     <!-- Третий блок About us  -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="about_title title_sm">About us</h2>
         <div class="about_text">
@@ -192,7 +199,7 @@
       </div>
     </section>
     <!-- Четвертый блок Pricing  -->
-    <section class="pricing">
+    <section class="pricing" id="pricing">
       <div class="container">
         <h2 class="title_sm">Pricing</h2>
         <div class="pricing_container">
@@ -240,9 +247,8 @@
         </div>
       </div>
     </section>
-
     <!-- Пятый блок Contact us  -->
-    <section class="contact">
+    <section class="contact" id="contacts">
       <div class="container">
         <div class="contact_container">
           <div class="contact_title"><h2 class="title_sm">Contact Us</h2></div>
@@ -277,6 +283,8 @@
         </div>
       </div>
     </section>
+
+    <script src="js/mail.php"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
